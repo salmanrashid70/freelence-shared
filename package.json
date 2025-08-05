@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "index.js",
   "description": "Helpers library for Freelence app",
@@ -31,22 +31,19 @@
     ".": {
       "import": "./esm/index.js",
       "require": "./cjs/index.js"
-    },
-    "./icons": {
-      "import": "./esm/icons/index.js",
-      "require": "./cjs/icons/index.js"
     }
   },
   "types": "./src/index.d.ts",
   "dependencies": {
     "@elastic/elasticsearch": "^9.1.0",
+    "@salmanrashid70/freelence-shared": "^0.0.1",
     "cloudinary": "^2.7.0",
     "express": "^5.1.0",
     "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.17.0",
     "typescript": "^5.8.3",
     "winston": "^3.17.0",
-    "jsonwebtoken": "^9.0.2",
     "winston-elasticsearch": "^0.19.0"
   },
   "devDependencies": {

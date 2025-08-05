@@ -5,7 +5,6 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
-    "jsx": "react-jsx",
     "lib": ["dom", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",

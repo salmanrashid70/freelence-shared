@@ -2,6 +2,9 @@ import JWT from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
 import { InternalServerError, NotAuthorizedError } from './error-handler';
 
+// This middleware checks for a valid gateway token in the request headers.
+// It verifies the token against a secret and ensures the token's identifier is allowed.
+// If the token is missing, invalid, or expired, it throws an appropriate error.
 const allowedTokens: string[] = [
   'auth',
   'seller',

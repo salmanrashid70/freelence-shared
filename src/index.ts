@@ -1,5 +1,9 @@
 export { winstonLogger } from './logger';
 export { gatewayMiddleware } from './gateway-middleware';
+export { uploads, videoUpload } from './cloudinary-upload';
+
+export { IEmailLocals } from './interfaces/email.interface';
+export { IBuyerDocument, IReduxBuyer } from './interfaces/buyer.interface';
 
 export {
   firstLetterUppercase,
@@ -24,9 +28,6 @@ export {
   ForbiddenError,
   TooManyRequestsError,
 } from './error-handler';
-
-export { IEmailLocals } from './interfaces/email.interface';
-export { IBuyerDocument, IReduxBuyer } from './interfaces/buyer.interface';
 
 export {
     IAuthPayload,
@@ -103,4 +104,3 @@ export {
     ISellerDocument
 } from './interfaces/seller.interface';
 
-export { uploads, videoUpload } from './cloudinary-upload';
